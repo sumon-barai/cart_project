@@ -1,0 +1,732 @@
+{
+	"info": {
+		"_postman_id": "7a53beac-e865-433e-8a88-dd13a1931a5b",
+		"name": "Cart Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22117712",
+		"_collection_link": "https://www.postman.com/warped-space-811092/workspace/student-project/collection/22117712-7a53beac-e865-433e-8a88-dd13a1931a5b?action=share&source=collection_link&creator=22117712"
+	},
+	"item": [
+		{
+			"name": "user-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/user-login",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user-login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/user-login",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"user-login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 20:25:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": \"A 4 Digit OTP has been send to your email address\"\n}"
+				}
+			]
+		},
+		{
+			"name": "verify-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\",\n    \"OTP\":\"6329\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/verify-login",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"verify-login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "verify-login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\",\n    \"OTP\":\"2878\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/verify-login",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"verify-login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 20:26:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODk5NzExNjUsIm5iZiI6MTY4OTk3MTE2OCwiZXhwIjoxNjkwMDU3NTY1LCJVc2VyRW1haWwiOiJlbmdyLnJhYmJpbEB5YWhvby5jb20iLCJVc2VySUQiOjF9.akd2qTEvrMfs6TIEI555hmarfbZkn97HExfKTg2fzPM\"\n}"
+				}
+			]
+		},
+		{
+			"name": "product-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/product-list",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"product-list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "product-list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/product-list",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"product-list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 20:26:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n            \"price\": \" 160,500\",\n            \"discount\": 0,\n            \"discount_price\": \"0\",\n            \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n            \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "create-cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/create-cart/9",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"create-cart",
+						"9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-cart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/create-cart/{product_id}",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"create-cart",
+								"{product_id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 20:26:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": {\n        \"id\": 9,\n        \"user_id\": \"1\",\n        \"product_id\": \"1\",\n        \"created_at\": \"2023-07-21T06:15:31.000000Z\",\n        \"updated_at\": \"2023-07-21T06:15:31.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "remove-cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/remove-cart/9",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"remove-cart",
+						"9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "remove-cart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/remove-cart/1",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"remove-cart",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 20:26:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "cart-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/cart-list",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"cart-list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cart-list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/cart-list",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"cart-list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jul 2023 20:28:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "54"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": [\n        {\n            \"id\": 11,\n            \"user_id\": 1,\n            \"product_id\": 1,\n            \"created_at\": \"2023-07-21T20:27:24.000000Z\",\n            \"updated_at\": \"2023-07-21T20:27:24.000000Z\",\n            \"product\": {\n                \"id\": 1,\n                \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"price\": \" 160,500\",\n                \"discount\": 0,\n                \"discount_price\": \"0\",\n                \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n                \"stock\": 1,\n                \"star\": 5,\n                \"remark\": \"popular\",\n                \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n                \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n            }\n        },\n        {\n            \"id\": 13,\n            \"user_id\": 1,\n            \"product_id\": 5,\n            \"created_at\": \"2023-07-21T20:28:28.000000Z\",\n            \"updated_at\": \"2023-07-21T20:28:28.000000Z\",\n            \"product\": {\n                \"id\": 5,\n                \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"price\": \" 160,500\",\n                \"discount\": 0,\n                \"discount_price\": \"0\",\n                \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n                \"stock\": 1,\n                \"star\": 5,\n                \"remark\": \"popular\",\n                \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n                \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n            }\n        },\n        {\n            \"id\": 14,\n            \"user_id\": 1,\n            \"product_id\": 6,\n            \"created_at\": \"2023-07-21T20:28:37.000000Z\",\n            \"updated_at\": \"2023-07-21T20:28:37.000000Z\",\n            \"product\": {\n                \"id\": 6,\n                \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"price\": \" 160,500\",\n                \"discount\": 0,\n                \"discount_price\": \"0\",\n                \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n                \"stock\": 1,\n                \"star\": 5,\n                \"remark\": \"popular\",\n                \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n                \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n            }\n        },\n        {\n            \"id\": 15,\n            \"user_id\": 1,\n            \"product_id\": 7,\n            \"created_at\": \"2023-07-21T20:28:40.000000Z\",\n            \"updated_at\": \"2023-07-21T20:28:40.000000Z\",\n            \"product\": {\n                \"id\": 7,\n                \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"price\": \" 160,500\",\n                \"discount\": 0,\n                \"discount_price\": \"0\",\n                \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n                \"stock\": 1,\n                \"star\": 5,\n                \"remark\": \"popular\",\n                \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n                \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n            }\n        },\n        {\n            \"id\": 16,\n            \"user_id\": 1,\n            \"product_id\": 8,\n            \"created_at\": \"2023-07-21T20:28:44.000000Z\",\n            \"updated_at\": \"2023-07-21T20:28:44.000000Z\",\n            \"product\": {\n                \"id\": 8,\n                \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"price\": \" 160,500\",\n                \"discount\": 0,\n                \"discount_price\": \"0\",\n                \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n                \"stock\": 1,\n                \"star\": 5,\n                \"remark\": \"popular\",\n                \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n                \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n            }\n        },\n        {\n            \"id\": 17,\n            \"user_id\": 1,\n            \"product_id\": 9,\n            \"created_at\": \"2023-07-21T20:28:51.000000Z\",\n            \"updated_at\": \"2023-07-21T20:28:51.000000Z\",\n            \"product\": {\n                \"id\": 9,\n                \"title\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"short_des\": \"iPhone 14 Pro Max iOS 16 6.7 inches Super Retina \",\n                \"price\": \" 160,500\",\n                \"discount\": 0,\n                \"discount_price\": \"0\",\n                \"image\": \"https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg\",\n                \"stock\": 1,\n                \"star\": 5,\n                \"remark\": \"popular\",\n                \"created_at\": \"2023-07-21T01:42:57.000000Z\",\n                \"updated_at\": \"2023-07-21T01:44:19.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTk1NDcwNzksIm5iZiI6MTY5OTU0NzA4MiwiZXhwIjoxNjk5NjMzNDc5LCJVc2VyRW1haWwiOiJlbmdyLnJhYmJpbEB5YWhvby5jb20iLCJVc2VySUQiOjF9.z4pQnx01gjwX1YJPpYMC3F-3sMAf5qMQNYhSYUrJMt8\"",
+			"type": "string"
+		}
+	]
+}
